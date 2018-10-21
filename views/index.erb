@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8' />
+    <title><%= @title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class='container'>
+        <h1><%= @title %></h1>
+        <form action='generate' method='post'>
+            <h3>Limite:</h3>
+            <input type='number' name='limit' required/>
+            <button type='submit' class='btn btn-secondary'>Generar</button>
+        </form>
+    </div>
+</body>
+</html>

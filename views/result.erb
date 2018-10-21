@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8' />
+    <title><%= @title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <a href='/' class='btn btn-dark'>Nueva Secuencia</a>
+        <br/>
+        <h3>Secuencia:</h3>
+        <ul class="list-group col-md-2">
+            <% @secuencia.each do |sec| %>
+                <li class="list-group-item list-group-item-dark"><%= sec %></li>
+            <% end %>
+        </ul>
+    </div>
+</body>
+</html>
